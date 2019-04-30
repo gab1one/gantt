@@ -179,8 +179,8 @@ class Gantt():
                 y += [self.yPos[self.labels.index(key)]]
                 x += [value]
 
-        plt.scatter(x, y, s=120, marker="D",
-                    color="yellow", edgecolor="black", zorder=3)
+        plt.scatter(x, y, s=50, marker="^",
+                    color="red", edgecolor="black", zorder=3)
 
     def add_legend(self):
         """Add a legend to the plot iff there are legend entries in
